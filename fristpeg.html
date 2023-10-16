@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Size Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+            padding-top: 250px;
+        }
+
+        .a4-page {
+            width: 21cm;
+            height: 31.7cm;
+            background-color: #EEEFF0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .columnA {
+            flex-basis: 12.5%;
+          
+            padding: 10px;
+        }
+
+        .columnB {
+            flex-basis: 100%;
+          
+           
+          
+        }
+        .columnC {
+            flex-basis: 87%;
+         
+            padding: 10px;
+        }
+
+        .column:nth-child(odd) {
+            background-color: #d0d0d0;
+        }
+
+        .third-row .column {
+            flex-basis: 48%;
+        }
+
+    .margedrow{
+        margin-bottom: 100px;
+    }
+
+    .columnB2 {
+            flex-basis: 100%;
+            background-color: #ad6c6c;
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       
+        .columnB2 img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+.minmizedrow{
+    height: 70%;
+}
+
+
+
+.columnA {
+    position: relative;
+    text-align: center;
+  }
+  
+  .circle-background {
+    background-color: #555; /* Change the color if needed */
+    border-radius: 50%;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Make sure it's on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .circle-background p {
+    margin: 0;
+    color: white; /* Change the color if needed */
+  }
+
+    </style>
+</head>
+<body>
+    <div class="a4-page">
+        <div class="row minmizedrow">
+            <div class="columnB">
+               <h1>How humans got a new gene that makes our brains larger </h1>
+            <h3>Somewhere between chimps and us , an RNA started producing a useful protein . 
+             </h3>
+<p>
+    <b  style="color: #f32424;"  >JOHN THAMER - </b><span style="color: #777;"> 1 / 5 / 2023 , 8:09 PM</span>
+</p>
+
+
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="columnB2 ">
+              <img src="image1.png" alt="">
+            
+            </div>
+           
+            
+        </div>
+        <div >
+            
+            <p><b style="color: #f32424;">Enlarge <span style="color: #333;">/ Building a bigger brain requires new genes , not a workout .</span></b></p>
+            <hr>
+        
+        </div>
+        <div class="row third-row">
+            <div class="columnA">
+                <div class="circle-background">
+                   <h1>59</h1>
+                  </div>
+            </div>
+            <div class="columnC">
+                <p> On the DNA level there's not much to distinguish humans from our closest relatives : chimpanzees and bonobos . At stretches of DNA that line up , human and chimp sequences are well over 90 percent identical . And , for the most part , the DNA does line up at genes , there are very few genes that are either human- or chimp specific . <br><br>
+                    
+                    That has meant most of the focus on understanding human evolution has been on small changes that can alter the timing or level of gene activity , and thus have an effect that's not proportionate to the number of bases changed . <br> <br>But that's not to say that newly evolved genes are irrelevant to human evolution . A paper released this week looks into how a class of new genes evolved since our split with our simian relatives . After gaining some insight into how this class evolved , the team behind the work looked at one of these newly evolved genes and found that it plays a key role in building bigger brains ,</p>
+
+                <h2>From RNA to protines</h2>
+
+                <p>
+
+                    Most of the genes we talk about encode proteins . The information in DNA is transcribed into a messenger RNA which is then translated into a protein . If the protein's not made , then the gene doesn't do anything . But we've known for nearly 70 years that this isn't the only option . A number of genes that are transcribed into RNA aren't translated into proteins . Instead , the RNA performs a critical function
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
