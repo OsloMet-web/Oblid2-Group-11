@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    padding-top: 300px;
+}
+
+.a4-page {
+    width: 21cm;
+    height: 31.7cm;
+    background-color: #EEEFF0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnA {
+    flex-basis: 12.5%;
+  
+    padding: 10px;
+}
+
+.columnB {
+    flex-basis: 100%;
+  
+   
+  
+}
+.columnC {
+    flex-basis: 87%;
+ 
+    padding: 10px;
+}
+
+.column:nth-child(odd) {
+    background-color: #d0d0d0;
+}
+
+.third-row .column {
+    flex-basis: 48%;
+}
+
+.margedrow{
+margin-bottom: 100px;
+}
+
+.columnB2 {
+    flex-basis: 100%;
+    background-color: #ad6c6c;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.columnB2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.minmizedrow{
+height: 70%;
+}
+
+
+
+.columnA {
+position: relative;
+text-align: center;
+}
+
+.circle-background {
+background-color: #555; /* Change the color if needed */
+border-radius: 50%;
+width: 100px; /* Adjust the size as needed */
+height: 100px; /* Adjust the size as needed */
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1; /* Make sure it's on top */
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+}
+
+.circle-background p {
+margin: 0;
+color: white; /* Change the color if needed */
+}
